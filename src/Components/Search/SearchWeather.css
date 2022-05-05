@@ -1,0 +1,13 @@
+input {
+    font-size: 22px;
+    width: 70%;
+    height: 36px;
+    padding: 0 1rem ;
+    outline: none;
+}
+
+button {
+    height: 38px;
+    border: none;
+    font-size: 22px;
+}
