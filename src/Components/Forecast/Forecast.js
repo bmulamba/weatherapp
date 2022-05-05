@@ -25,7 +25,7 @@ export default function Forecast({ dataCity }) {
     <>
       <div className="forecast">
         <div className="forecast-header">
-          <h2>{dataCity.name}</h2>
+          <h2>{dataCity.name}</h2><span>{dataCity.sys?.country}</span>
         </div>
         <div className="forecast-body">
           <h2>
