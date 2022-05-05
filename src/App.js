@@ -6,8 +6,9 @@ import Forecast from './Components/Forecast/Forecast'
 function App() {
 
   const [search, setSearch ] = useState("london");
+  const [input, setInput] = useState('');
   const [dataCity, setDataCity] = useState([]);
-  const [input, setInput] = useState('')
+
 
   useEffect(() => {
     const responseApi = async () => {
@@ -15,8 +16,10 @@ function App() {
       .then(result => result.json())
       .then(data => setDataCity(data))
     }
+    // console.log(dataCity);
     responseApi();
   },[search] )
+
 
   function handleSubmit(e){
     e.preventDefault();
