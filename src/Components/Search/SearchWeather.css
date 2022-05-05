@@ -1,13 +1,29 @@
+.form-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 3px;
+    margin: 0 auto;
+    width: 78%;
+}
+
+
 input {
     font-size: 22px;
-    width: 70%;
-    height: 36px;
+    width: 100%;
+    height: 49px;
     padding: 0 1rem ;
     outline: none;
+    border-radius: 0;
+    border: none;
 }
 
 button {
-    height: 38px;
+    height: 49px;
     border: none;
     font-size: 22px;
+    outline: none;
+    border-radius: 0;
+    border: none;
 }

@@ -22,8 +22,9 @@ function App() {
 
   function handleSubmit(e) {
     e.preventDefault();
+
     setSearch(input);
-    // setSearch("")
+    setInput("")
   }
 
   console.log(dataCity);
@@ -32,7 +33,6 @@ function App() {
     <div className="container">
       <div className="App">
         <h1 className="text-white">Weather App</h1>
-        <hr></hr>
         <SearchWeather
           input={input}
           setInput={setInput}
