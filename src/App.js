@@ -27,10 +27,8 @@ function App() {
     setInput("")
   }
 
-  console.log(dataCity);
-
   return (
-    <div className="container">
+  
       <div className="App">
         <h1 className="text-white">Weather App</h1>
         <SearchWeather
@@ -40,7 +38,6 @@ function App() {
         />
         <Forecast dataCity={dataCity} />
       </div>
-    </div>
   );
 }
 

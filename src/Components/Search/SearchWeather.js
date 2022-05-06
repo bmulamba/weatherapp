@@ -14,7 +14,9 @@ export default function SearchWeather({ input, setInput, handleSubmit }) {
             onChange={(e) => setInput(e.target.value)}
             required
           />
-          <button>Search</button>
+          <button>
+            <i className="fas fa-search"></i>
+          </button>
           </div>
         </form>
     </div>

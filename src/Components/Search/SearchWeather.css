@@ -8,7 +8,6 @@
     width: 78%;
 }
 
-
 input {
     font-size: 22px;
     width: 100%;
@@ -21,9 +20,19 @@ input {
 
 button {
     height: 49px;
+    padding: 0 2rem;
+    color: green;
+    cursor: pointer;
     border: none;
     font-size: 22px;
     outline: none;
     border-radius: 0;
     border: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .form-search {
+      width: 90%;
+    }
 }
