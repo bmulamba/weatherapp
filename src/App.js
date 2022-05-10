@@ -16,7 +16,6 @@ function App() {
         .then((result) => result.json())
         .then((data) => setDataCity(data));
     };
-    // console.log(dataCity);
     responseApi();
   }, [search]);
 

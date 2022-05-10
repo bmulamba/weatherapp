@@ -6,13 +6,13 @@ export default function Forecast({ dataCity }) {
   const temp_min = (dataCity.main?.temp_min - 273.15).toFixed(2);
   const temp_max = (dataCity.main?.temp_max - 273.15).toFixed(2);
 
-  let today = new Date();
-  let date = today.getDay() + 1;
-  let year = today.getFullYear();
-  let month = today.toLocaleString("default", { month: "long" });
-  let day = today.toLocaleString("default", { weekday: "long" });
+  let d = new Date();
+  let date = d.getDate();
+  let year = d.getFullYear();
+  let month = d.toLocaleString("default", { month: "long" });
+  let day = d.toLocaleString("default", { weekday: "long" });
 
-  let time = today.toLocaleString([], {
+  let time = d.toLocaleString([], {
     hour: "2-digit",
     minute: "2-digit",
     second: "2-digit",
@@ -32,9 +32,14 @@ export default function Forecast({ dataCity }) {
         icon = "fa-snow-flake"
       } else {
         icon = "fa-smog"
-      }   
+      } 
+  }else {
+    return (
+      <div>Loading ...</div>
+    )
   }
 
+  // console.log(d.getDate());
   return (
     <>
       <div className="forecast">
