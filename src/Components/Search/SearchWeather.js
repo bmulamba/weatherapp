@@ -4,8 +4,7 @@ import "./SearchWeather.css";
 export default function SearchWeather({ input, setInput, handleSubmit }) {
   return (
     <div>
-     
-        <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <div className="form-search">
           <input
             type="text"
@@ -17,8 +16,8 @@ export default function SearchWeather({ input, setInput, handleSubmit }) {
           <button>
             <i className="fas fa-search"></i>
           </button>
-          </div>
-        </form>
+        </div>
+      </form>
     </div>
   );
 }

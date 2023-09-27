@@ -1,15 +1,15 @@
 .forecast {
-    width: 78%;
-    height: auto;
-    margin: 0 auto;
-    background-color: rgba(36, 25, 91, 0.6);
+    width: 73%;
+    height: 100vh;
+    margin: 10px auto;
+    background-color: rgba(2, 2, 2, 0.988);
     height: auto;
 }
 
 .forecast-header h2 {
     color: white;
     display: flex;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 span {
@@ -20,23 +20,28 @@ span {
     position: relative;
     display: flex;
     justify-content: center;
-    margin: .6rem 0;
+    /* margin: .6rem 0; */
 }
 
 .forecast-header span {
     position: absolute;
     right: 3rem;
-    top: 3rem;
+    top: 2rem;
 }
 
 .forecast-body h2{
     color: rgb(203, 223, 203);
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 .forecast-body h3{
     color: rgb(209, 239, 41);
     font-size: 1.5vw;
+}
+
+.loading {
+    font-weight: 800;
+    padding-top: 3rem;
 }
 
 .forecast-main{

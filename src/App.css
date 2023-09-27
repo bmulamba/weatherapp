@@ -1,14 +1,15 @@
 .App {
-  margin: -2rem auto;
+  margin: 0 auto;
   text-align: center;
-  width: 80%;
-  height: 90vh;
+  width: 73%;
+  max-height: 100vh;
 }
 
 .text-white {
-  font-size: 40px;
+  font-size: 30px;
   color: rgb(249, 249, 252);
-  padding-top: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: -15px;
 }
 
 @media only screen and (max-width: 600px) {

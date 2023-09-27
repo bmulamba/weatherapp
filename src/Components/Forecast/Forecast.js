@@ -35,7 +35,7 @@ export default function Forecast({ dataCity }) {
       } 
   }else {
     return (
-      <div>Loading ...</div>
+      <div><h1 className="loading">Loading, Please wait...</h1></div>
     )
   }
 
